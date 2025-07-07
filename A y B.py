@@ -1,6 +1,7 @@
 def compareTriplets(a, b):
-    alice = bob = 0           # Puntuaciones iniciales
-    for ai, bi in zip(a, b):  # Recorremos ambas listas en paralelo
+    alice = bob = 0  # Puntuaciones iniciales
+    min = min(len(a,b))
+    for ai, bi in range(min):  # Recorremos ambas listas en paralelo
         if ai > bi:
             alice += 1
         elif ai < bi:
